@@ -1,6 +1,5 @@
 package fizzbuzz;
 
-
 public class Fizz implements ISay {
 
     public static final String FIZZ = "Fizz";
@@ -18,7 +17,20 @@ public class Fizz implements ISay {
 
     @Override
     public String say(String number) {
-        return null;
+        if (isNotNumber(number)) return "";
+        return say(Integer.parseInt(number));
+    }
+
+    private boolean isNotNumber(String number) {
+        try
+        {
+            Integer.parseInt(number);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return true;
+        }
+        return false;
     }
 
 

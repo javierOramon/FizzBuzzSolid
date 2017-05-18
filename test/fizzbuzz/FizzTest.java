@@ -20,7 +20,7 @@ public class FizzTest {
         //Arrange
         final String expected = Fizz.FIZZ;
         //Act
-        String actual = fizz.say(3);
+        String actual = fizz.say("3");
         //Assert
         assertEquals("Don't return Fizz", expected, actual);
     }
@@ -30,7 +30,7 @@ public class FizzTest {
         //Arrange
         final String expected = "";
         //Act
-        String actual = fizz.say(2);
+        String actual = fizz.say("2");
         //Assert
         assertEquals("Text is not empty", expected, actual);
     }
@@ -40,7 +40,7 @@ public class FizzTest {
         //Arrange
         final String expected = Fizz.FIZZ;
         //Act
-        String actual = fizz.say(6);
+        String actual = fizz.say("6");
         //Assert
         assertEquals("Text is not empty", expected, actual);
     }
