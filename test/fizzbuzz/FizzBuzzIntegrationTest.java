@@ -14,7 +14,7 @@ public class FizzBuzzIntegrationTest {
 
     @Before
     public void setUp() throws Exception {
-        fizzbuzz = new FizzBuzz(Arrays.asList(new Fizz(), new Buzz()));
+        fizzbuzz = new FizzBuzz(Arrays.asList(new Fizz(), new Buzz(), new NotNumber()));
     }
 
     @After
@@ -99,6 +99,16 @@ public class FizzBuzzIntegrationTest {
         final String expected = "FizzBuzz";
         //Act
         String actual = fizzbuzz.say("15");
+        //Assert
+        assertEquals("Does not return FizzBuzz", expected, actual);
+    }
+
+    @Test
+    public void sayASentenceReturnIsNotANumber() {
+        //Arrange
+        final String expected = NotNumber.IS_NOT_A_NUMBER;
+        //Act
+        String actual = fizzbuzz.say("I shouldn't be here");
         //Assert
         assertEquals("Does not return FizzBuzz", expected, actual);
     }

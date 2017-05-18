@@ -18,7 +18,7 @@ public class NotNumberTest {
     @Test
     public void sayCharacterReturnNotNumber(){
         //Arrange
-        final String expected = "Is not a number";
+        final String expected = NotNumber.IS_NOT_A_NUMBER;
         final String input = "a";
         //Act
         String result = notNumber.say(input);

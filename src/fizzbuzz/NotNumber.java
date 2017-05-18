@@ -3,11 +3,13 @@ package fizzbuzz;
 
 public class NotNumber implements ISay {
 
+    public static final String IS_NOT_A_NUMBER = "Is not a number";
+
     @Override
     public String say(String number) {
         if(isNumber(number)) return "";
 
-        return "Is not a number";
+        return IS_NOT_A_NUMBER;
     }
 
     private boolean isNumber(String number) {
