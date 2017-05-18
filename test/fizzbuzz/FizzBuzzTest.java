@@ -26,11 +26,11 @@ public class FizzBuzzTest {
     public void ifAnyRuleWorkReturnTheNumber(){
         //Arrange
         final String expected = "5";
-        Integer anyNumber = 5;
+        String anyNumber = "5";
         when(rule1.say(anyNumber)).thenReturn("");
         when(rule2.say(anyNumber)).thenReturn("");
         //Act
-        String result = fizzBuzz.say(5);
+        String result = fizzBuzz.say("5");
         //Assert
         assertEquals("is not the same number", expected, result);
     }
@@ -39,11 +39,11 @@ public class FizzBuzzTest {
     public void iffirstRuleWorkReturnYourText(){
         //Arrange
         final String expected = "Juan";
-        Integer anyNumber = 5;
+        String anyNumber = "5";
         when(rule1.say(anyNumber)).thenReturn(expected);
         when(rule2.say(anyNumber)).thenReturn("");
         //Act
-        String result = fizzBuzz.say(5);
+        String result = fizzBuzz.say("5");
         //Assert
         assertEquals("is not the same number", expected, result);
     }
@@ -52,11 +52,11 @@ public class FizzBuzzTest {
     public void ifSecondtRuleWorkReturnYourText(){
         //Arrange
         final String expected = "Juan";
-        Integer anyNumber = 5;
+        String anyNumber = "5";
         when(rule1.say(anyNumber)).thenReturn("");
         when(rule2.say(anyNumber)).thenReturn(expected);
         //Act
-        String result = fizzBuzz.say(5);
+        String result = fizzBuzz.say("5");
         //Assert
         assertEquals("is not the same number", expected, result);
     }
@@ -67,11 +67,11 @@ public class FizzBuzzTest {
         final String first = "first";
         final String second = "second";
         final String expected = first + second;
-        Integer anyNumber = 5;
+        String anyNumber = "5";
         when(rule1.say(anyNumber)).thenReturn(first);
         when(rule2.say(anyNumber)).thenReturn(second);
         //Act
-        String result = fizzBuzz.say(5);
+        String result = fizzBuzz.say("5");
         //Assert
         assertEquals("is not the same number", expected, result);
     }

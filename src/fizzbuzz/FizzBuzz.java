@@ -12,13 +12,13 @@ public class FizzBuzz {
         this.rules = rules;
     }
 
-    public String say(Integer number) {
+    public String say(String number) {
         String out = rules.stream().map(r -> r.say(number)).collect(Collectors.joining());
         out = sanitizeOut(number, out);
         return out;
     }
 
-    private String sanitizeOut(Integer number, String out) {
+    private String sanitizeOut(String number, String out) {
         if(out.isEmpty()){
             out = number.toString();
         }

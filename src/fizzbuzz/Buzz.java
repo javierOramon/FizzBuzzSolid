@@ -8,8 +8,7 @@ public class Buzz implements ISay {
 
     public static final int NUMBER_BUZZ = 5;
 
-    @Override
-    public String say(Integer number) {
+    private String say(Integer number) {
         String word = "";
         if(isBuzz(number)){
             word = BUZZ;

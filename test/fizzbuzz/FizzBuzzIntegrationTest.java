@@ -28,7 +28,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "1";
         //Act
-        String actual = fizzbuzz.say(1);
+        String actual = fizzbuzz.say("1");
         //Assert
         assertEquals("Does not return one", expected, actual);
     }
@@ -38,7 +38,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "2";
         //Act
-        String actual = fizzbuzz.say(2);
+        String actual = fizzbuzz.say("2");
         //Assert
         assertEquals("Does not return two", expected, actual);
     }
@@ -48,7 +48,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "Fizz";
         //Act
-        String actual = fizzbuzz.say(3);
+        String actual = fizzbuzz.say("3");
         //Assert
         assertEquals("Does not return Fizz", expected, actual);
     }
@@ -58,7 +58,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "Buzz";
         //Act
-        String actual = fizzbuzz.say(5);
+        String actual = fizzbuzz.say("5");
         //Assert
         assertEquals("Does not return Buzz", expected, actual);
     }
@@ -68,7 +68,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "Fizz";
         //Act
-        String actual = fizzbuzz.say(6);
+        String actual = fizzbuzz.say("6");
         //Assert
         assertEquals("Does not return Fizz", expected, actual);
     }
@@ -78,7 +78,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "Fizz";
         //Act
-        String actual = fizzbuzz.say(9);
+        String actual = fizzbuzz.say("9");
         //Assert
         assertEquals("Does not return Fizz", expected, actual);
     }
@@ -88,7 +88,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "Buzz";
         //Act
-        String actual = fizzbuzz.say(10);
+        String actual = fizzbuzz.say("10");
         //Assert
         assertEquals("Does not return Buzz", expected, actual);
     }
@@ -98,7 +98,7 @@ public class FizzBuzzIntegrationTest {
         //Arrange
         final String expected = "FizzBuzz";
         //Act
-        String actual = fizzbuzz.say(15);
+        String actual = fizzbuzz.say("15");
         //Assert
         assertEquals("Does not return FizzBuzz", expected, actual);
     }

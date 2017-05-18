@@ -6,8 +6,7 @@ public class Fizz implements ISay {
 
     private static final int NUMBER_FIZZ = 3;
 
-    @Override
-    public String say(Integer number) {
+    private String say(Integer number) {
         String word = "";
         if(isFizz(number)){
             word = FIZZ;
