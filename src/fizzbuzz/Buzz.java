@@ -17,6 +17,10 @@ public class Buzz implements ISay {
         return word;
     }
 
+    @Override
+    public String say(String number) {
+        return null;
+    }
 
 
     private boolean isBuzz(Integer numero) {

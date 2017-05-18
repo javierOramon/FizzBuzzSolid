@@ -16,6 +16,11 @@ public class Fizz implements ISay {
         return word;
     }
 
+    @Override
+    public String say(String number) {
+        return null;
+    }
+
 
     private boolean isFizz(Integer numero) {
         return (numero % NUMBER_FIZZ == 0);
