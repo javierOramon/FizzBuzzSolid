@@ -26,5 +26,16 @@ public class NotNumberTest {
         assertEquals("is a number", expected, result);
     }
 
+    @Test
+    public void sayNumberReturnEmpty(){
+        //Arrange
+        final String expected = "";
+        final String input = "1";
+        //Act
+        String result = notNumber.say(input);
+        //Assert
+        assertEquals("is not a number", expected, result);
+    }
+
 
 }
