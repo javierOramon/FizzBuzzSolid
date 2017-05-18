@@ -19,7 +19,7 @@ public class BuzzTest {
         //Arrange
         final String expected = Buzz.BUZZ;
         //Act
-        String actual = buzz.say(5);
+        String actual = buzz.say("5");
         //Assert
         assertEquals("Don't return Buzz", expected, actual);
     }
@@ -29,7 +29,7 @@ public class BuzzTest {
         //Arrange
         final String expected = "";
         //Act
-        String actual = buzz.say(2);
+        String actual = buzz.say("2");
         //Assert
         assertEquals("Text is not empty", expected, actual);
     }
@@ -39,7 +39,7 @@ public class BuzzTest {
         //Arrange
         final String expected = Buzz.BUZZ;
         //Act
-        String actual = buzz.say(10);
+        String actual = buzz.say("10");
         //Assert
         assertEquals("Text is not Buzz", expected, actual);
     }

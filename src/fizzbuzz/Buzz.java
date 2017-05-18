@@ -19,7 +19,20 @@ public class Buzz implements ISay {
 
     @Override
     public String say(String number) {
-        return null;
+        if (isNotNumber(number)) return "";
+        return say(Integer.parseInt(number));
+    }
+
+    private boolean isNotNumber(String number) {
+        try
+        {
+            Integer.parseInt(number);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return true;
+        }
+        return false;
     }
 
 
